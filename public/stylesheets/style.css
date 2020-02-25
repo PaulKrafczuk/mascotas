@@ -1,9 +1,28 @@
 body {
-  background-color: blueviolet;
+  
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: red;
+header{
+  background-color: green;
+  margin: 10px auto;
+  width: 80%;
+}
+
+
+article{
+background-color: blue;
+border: 5px solid red;
+width: 80%;
+padding: 5%;
+margin: 10px;
+
+}
+
+footer{
+  background-color: green;
+  clear: both;
+  width: 80%;
+  margin: 10px auto;
 }
