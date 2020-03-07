@@ -3,8 +3,9 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
   <body>
 
    <header>
@@ -23,10 +24,45 @@
       <article><img src="https://4.bp.blogspot.com/-2Tuwz9-IwqE/T47mWV62iJI/AAAAAAAAAAM/qTSUaWr815g/s1600/martillo.jpg  " alt="martillo"></article>
       <article><img src="https://http2.mlstatic.com/pinza-universal-con-aislante-6-pulgadas-labor-lab00300-D_NQ_NP_995384-MLA31021374028_062019-Q.jpg" alt="pinza"></article>
    </section>
+
+   <p>
+    <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">contacto</a>
+    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">donde estamos?</button>
+   
+  </p>
+  <div class="row">
+    <div class="col">
+      <div class="collapse multi-collapse" id="multiCollapseExample1">
+        <div class="card card-body">
+          podes llamar de 8 a 12 al 3624873793 o via email al mascotas@wepet.com.ar
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="collapse multi-collapse" id="multiCollapseExample2">
+        <div class="card card-body">
+          si queres visitarnos veni a Av. Rissione 125 Resistencia-Chaco
+        </div>
+      </div>
+    </div>
+  </div>
    
    <footer>footer</footer>
 
-  
+
+
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <ul>
+
+    <% for(var i = 1; i<=10; i++){ %>
+      
+      <li> soy el item <%= i %> </li>
+
+    <% 	} %> 
+  </ul>
 
   </body>
 </html>
